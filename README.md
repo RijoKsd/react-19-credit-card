@@ -184,9 +184,3 @@ npm run build
 ## LICENSE
 
 This project is licensed under the [MIT License](LICENSE.md).
-
-
-
-https://chatgpt.com/s/t_6904f4e33b3c81919ee45d5b783702cf
-
-https://chatgpt.com/s/t_6904f51b7fb48191ae71ddc8ef79ffdb
