@@ -1,0 +1,76 @@
+{
+  "name": "react-19-credit-card",
+  "version": "1.0.3",
+  "description": "Beautiful and modern credit card component built for React 19",
+  "type": "module",
+  "author": "Rijo Sebastian",
+  "license": "MIT",
+  "main": "dist/lib/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/es/index.js",
+      "require": "./dist/lib/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./dist/es/index.css": "./dist/es/index.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "keywords": [
+    "react",
+    "react-19",
+    "credit-card",
+    "payment",
+    "react-component",
+    "card",
+    "credit",
+    "react-credit-cards"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RijoKsd/react-19-credit-card.git"
+  },
+  "homepage": "https://rijoksd.netlify.app",
+  "bugs": {
+    "url": "https://github.com/RijoKsd/react-19-credit-card/issues"
+  },
+  "dependencies": {
+    "credit-card-type": "^10.1.0",
+    "luhn": "^2.4.1"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/credit-card-type": "^7.0.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "rollup": "^3.29.4",
+    "rollup-plugin-dts": "^5.3.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-scss": "^4.0.1",
+    "sass": "^1.93.2",
+    "tslib": "^2.6.3",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && npm run build:js && npm run build:types",
+    "build:js": "rollup -c",
+    "build:types": "rollup -c rollup.dts.config.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
